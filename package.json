@@ -1,0 +1,21 @@
+{
+  "name": "more-agents-together",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Multi-agent collaboration system — user prompts are decomposed into tasks and executed by specialized agents with different models",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:server": "npm run dev --workspace=apps/server",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  }
+}
