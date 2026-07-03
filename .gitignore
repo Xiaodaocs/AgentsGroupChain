@@ -1,0 +1,11 @@
+node_modules/
+dist/
+apps/server/dist/
+apps/server/data/*.db
+apps/server/data/*.db-backup
+.env
+*.log
+.DS_Store
+Thumbs.db
+test-project/
+test-project2/
