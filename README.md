@@ -45,7 +45,7 @@ chmod +x start.sh && ./start.sh
 ### 手动启动
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/MoreAgentsTogether.git
+git clone https://github.com/Xiaodaocs/MoreAgentsTogether.git
 cd MoreAgentsTogether
 npm install
 npm run dev
